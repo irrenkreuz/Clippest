@@ -2,5 +2,4 @@ This is a tanh function softclipper written on Rust. No GUI included. / Софт
 
 Building / Компиляция:
 
-cargo build
 cargo xtask bundle clippest --release
