@@ -1,0 +1,18 @@
+[package]
+name = "clippest"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", default-features = false }
+
+[workspace]
+members = ["xtask"]
+
+[profile.release]
+lto = "thin"
+strip = "symbols"
+debug = 0
